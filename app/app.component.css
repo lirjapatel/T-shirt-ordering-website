@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto; }
+  
+.header {
+    color: #104b86; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+  
+.form-label {
+    display: block;
+    font-weight: bold;
+    color: #245a8c; 
+    margin-bottom: 5px;
+}
+  
+.input-box {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 16px;
+}
+  
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+  
+.mat-checkbox {
+    display: block;
+    margin: 10px 0;
+}
+  
+.full-width {
+    width: 100%;
+}
+  
+.submit-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #326fab;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.submit-button:hover {
+    background-color: #78abdf;
+}
+  
+.output-box {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f8f9fa;
+    font-size: 16px;
+}

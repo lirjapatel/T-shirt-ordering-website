@@ -1,0 +1,45 @@
+<div class="container">
+  <h3 class="header">A4 for Lirja Patel / 991738587</h3>
+  <form *ngIf="patelLirjaForm" [formGroup]="patelLirjaForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="id991738587" class="form-label">Enter a Student ID</label>
+      <input id="id991738587" formControlName="id991738587" class="input-box">
+    </div>
+    <div class="form-group">
+      <label for="Lirja" class="form-label">Enter a first name</label>
+      <input id="Lirja" formControlName="Lirja" class="input-box">
+    </div>
+    <div class="form-group">
+      <label for="patel" class="form-label">Enter a last name</label>
+      <input id="patel" formControlName="patel" class="input-box">
+    </div>
+    <div class="form-group">
+      <label for="patelLirjasize" class="form-label">Shirt Size</label>
+      <select id="patelLirjasize" formControlName="patelLirjasize" class="input-box">
+        <option *ngFor="let size of shirtSizes" [value]="size.size">{{ size.size }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Shirt Colour</label>
+      <mat-radio-group formControlName="patelLirjacolour" class="radio-group">
+        <mat-radio-button value="Sheridan Blue">Sheridan Blue</mat-radio-button>
+        <mat-radio-button value="Sheridan Orange">Sheridan Orange</mat-radio-button>
+        <mat-radio-button value="Black">Black</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="form-group">
+      <mat-checkbox formControlName="patelLirjainclude1">Campus Name</mat-checkbox>
+      <mat-checkbox formControlName="patelLirjainclude2">Sheridan Logo</mat-checkbox>
+    </div>
+    <div class="form-group">
+      <mat-form-field class="full-width">
+        <mat-label>Choose Start Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="patelLirjadate" class="input-box">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <button mat-raised-button type="submit" class="submit-button">Click to Submit Data</button>
+  </form>
+  <div id="output" class="output-box"></div>
+</div>
